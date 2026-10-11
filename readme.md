@@ -1,51 +1,73 @@
 # Password Generator in C
 ## About the Project
 
-I'm currently developing a password generator using C. The main goal of this project is to create a simple program that generates passwords based on the user's preferences.
+I'm currently developing a password generator using C. The main goal of this project is to generate random passwords based on the user's preferences and evaluate how secure they are.
 
-The idea is to let the user choose whether they want numbers and special characters in their password, as well as specify how many characters the password should have.
+The program will allow users to customize their passwords by choosing whether to include numbers and special characters, as well as specifying the desired password length.
 
-Based on these options, the program will generate a random password containing letters and, depending on the user's choices, numbers and special characters.
+After generating the password, the program will evaluate its strength and classify it as Very Secure, Moderately Secure, or Insecure.
 
+This project is a way for me to improve my C programming skills while learning more about random number generation, input validation, string manipulation, and password security.
 ## How It Works
 
-The program will ask the user three questions:
+The program is designed to follow three main steps:
 
-Does the user want to include numbers?
-Does the user want to include special characters?
-How long should the password be?
+    User Preferences: The user chooses whether to include numbers and special characters in the password.
+    Password Generation: The user specifies the desired password length, and the program generates a random password based on the selected options. Letters will always be included, while numbers and special characters will only be included if requested.
+    Password Strength Evaluation: After generating the password, the program evaluates its strength and classifies it as Very Secure, Moderately Secure, or Insecure.
 
-After collecting the answers, the program will generate a password according to the selected options.
-
+The strength evaluation will consider factors such as password length, character variety, and randomness.
 ## Current Progress
 
-At the moment, I've implemented the user input section and basic input validation.
+At the moment, I've implemented the initial user input system and basic input validation.
 
-The program already checks whether the user selects valid options and whether the requested password length is between 1 and 90 characters. It also displays a summary of the selected preferences.
+The program currently:
 
-The password generation functionality is not implemented yet, so the program currently only collects and validates the user's choices.
+    Asks the user whether they want to include numbers.
+    Asks the user whether they want to include special characters.
+    Requests the desired password length.
+    Validates the selected options and rejects invalid inputs.
+    Accepts password lengths between 1 and 90 characters.
+    Displays a summary of the user's selected preferences.
 
-## Technologies
-C
-Standard C Library (stdio.h)
-## How to Run
+Password generation and password strength evaluation have not been implemented yet.
+## Technologies Used
 
-Compile the program using GCC:
+    Programming Language: C
+    Standard Library: stdio.h
+    Compiler: GCC
+
+## How to Compile and Run
+
+To compile the program using GCC, run:
 
 gcc main.c -o password_generator
 
-
-Run it on Linux or macOS:
+On Linux or macOS, execute the program with:
 
 ./password_generator
 
-
-On Windows:
+On Windows, run:
 
 password_generator.exe
 
-## What's Next?
+If your source file has a different name, replace main.c with the correct filename.
+## Future Improvements
 
-My next step is to implement the actual password generation algorithm. After that, I plan to test different combinations of options and make sure the generated passwords follow the user's preferences.
+My next steps are to implement the remaining functionality and improve the overall reliability of the program.
+
+    Implement the password generation algorithm.
+    Generate passwords using random characters.
+    Include numbers and special characters only when requested.
+    Ensure the generated password matches the length specified by the user.
+    Develop a password strength evaluation system.
+    Classify passwords as Very Secure, Moderately Secure, or Insecure.
+    Improve input handling and error messages.
+    Test different password lengths and combinations of character types.
+    Use a cryptographically secure random number generator to make the generated passwords suitable for real-world use.
+
+## Project Status
+
+Currently in development.
 
 This is a personal project I'm working on to improve my C programming skills and because its also my hackclub project.
