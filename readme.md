@@ -1,5 +1,5 @@
-Password Generator in C
-About the Project
+# Password Generator in C
+##About the Project
 
 I'm currently developing a password generator using C. The main goal of this project is to create a simple program that generates passwords based on the user's preferences.
 
@@ -7,7 +7,7 @@ The idea is to let the user choose whether they want numbers and special charact
 
 Based on these options, the program will generate a random password containing letters and, depending on the user's choices, numbers and special characters.
 
-How It Works
+##How It Works
 
 The program will ask the user three questions:
 
@@ -17,7 +17,7 @@ How long should the password be?
 
 After collecting the answers, the program will generate a password according to the selected options.
 
-Current Progress
+##Current Progress
 
 At the moment, I've implemented the user input section and basic input validation.
 
@@ -25,10 +25,10 @@ The program already checks whether the user selects valid options and whether th
 
 The password generation functionality is not implemented yet, so the program currently only collects and validates the user's choices.
 
-Technologies
+##Technologies
 C
 Standard C Library (stdio.h)
-How to Run
+##How to Run
 
 Compile the program using GCC:
 
@@ -44,7 +44,7 @@ On Windows:
 
 password_generator.exe
 
-What's Next?
+##What's Next?
 
 My next step is to implement the actual password generation algorithm. After that, I plan to test different combinations of options and make sure the generated passwords follow the user's preferences.
 
