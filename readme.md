@@ -48,4 +48,4 @@ password_generator.exe
 
 My next step is to implement the actual password generation algorithm. After that, I plan to test different combinations of options and make sure the generated passwords follow the user's preferences.
 
-This is a personal project I'm working on to improve my C programming skills and gain a better understanding of input validation, random number generation, and string manipulation.
+This is a personal project I'm working on to improve my C programming skills and because its also my hackclub project.
